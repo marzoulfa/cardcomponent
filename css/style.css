@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+
+    font-family: 'Open Sans', sans-serif;
+}
+/* colors */
+:root{
+--BrightOrange: hsl(31, 77%, 52%) ;
+--DarkCyan: hsl(184, 100%, 22%);
+--VeryDarkCyan: hsl(179, 100%, 13%);
+/* ##paragraohs */
+--background-color: hsl(0, 0%, 95%);
+--transparent:hsla(0, 0%, 100%, 0.75)
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    
+}
+.content{
+    margin: 0 auto;
+    width: 70%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+    height:100vh;
+}
+.text{
+display: flex;
+background-color: var(--background-color);
+height:30rem;
+
+}
+.text-a{
+    background-color: var(--BrightOrange);
+padding: 40px 40px 0;
+}
+.text-b{
+background-color: var(--DarkCyan);
+padding: 40px 40px 0;
+}
+.text-c{
+background-color: var(--VeryDarkCyan);
+padding: 40px 40px 0
+}
+h1{
+    color:white;
+    font-size: 2.5rem;
+    margin: 20px 0 20px 0;
+    font-family: 'Big Shoulders Display', cursive;
+}
+p{
+    color: var(--transparent);
+    width: 80%;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 6rem;
+    line-height: 1.7;
+}
+button{
+    /* padding: 15px;
+    padding-left: 60px; */
+    cursor: pointer;
+    padding: 1rem 3rem;
+    border-radius: 30px;
+    font-family: 'Lexend Deca', sans-serif;
+    border:2.3px solid var(--background-color);
+
+}
+.content-bar{
+    border-radius: 10px;
+    overflow: hidden;
+}
+    
+.sedans {
+color: var(--BrightOrange);
+
+}
+.sedans:hover{
+    background-color: var(--BrightOrange);
+    color: #fff;
+    
+}
+.suvs {
+    color:var(--DarkCyan);
+}
+ .luxury {
+    color:var(--VeryDarkCyan);
+}
+.suvs:hover{
+  background-color:var(--DarkCyan);
+color: white;
+}
+.luxury:hover{
+background-color: var(--VeryDarkCyan);
+color: var(--background-color);
+
+} 
+@media (max-width:375px){
+    section{
+        margin: 4rem 0;
+    }
+    .content-bar{
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    body,.text,section,.content{
+        height: auto;
+    }
+    .text{
+        flex-direction: column;
+        /* height:80vh; */
+        margin: 0 auto;
+    }
+    
+    p{
+        margin-bottom: 0;
+        width: 70vw;
+        padding-bottom: 30px;
+    }
+   button{
+       margin-bottom: 40px;
+   }
+}
